@@ -16,6 +16,7 @@
   --shadow: 0 24px 60px -18px rgba(43, 29, 22, .35);
 
   --font-ar-display: "Aref Ruqaa", serif;
+  --font-numbers: "Amiri", serif;
   --font-ar-body: "El Messiri", sans-serif;
   --font-ar-quran: "Amiri", serif;
   --font-en-display: "Playfair Display", serif;
@@ -241,7 +242,8 @@ body::before {
   color: var(--ink-soft);
 }
 .letter-date {
-  font-family: var(--font-ar-display);
+  font-family: var(--font-numbers);
+  font-weight: 700;
   font-size: clamp(.9rem, 3vw, 1.15rem);
   color: var(--gold-deep);
   margin: .4rem 0 .5rem;
@@ -451,7 +453,7 @@ section, header.hero, footer.finale {
   font-size: clamp(1rem, 3.4vw, 1.3rem);
   color: var(--ink-soft);
 }
-.hero-date b { color: var(--ink); font-family: var(--font-ar-display); }
+.hero-date b { color: var(--ink); font-family: var(--font-numbers); font-weight: 700; }
 
 .scroll-cue {
   width: 26px; height: 44px;
@@ -576,7 +578,8 @@ section, header.hero, footer.finale {
 }
 .cd-cell b {
   display: block;
-  font-family: var(--font-ar-display);
+  font-family: var(--font-numbers);
+  font-weight: 700;
   font-size: clamp(1.6rem, 6.5vw, 2.6rem);
   color: var(--ink);
   line-height: 1.15;
@@ -630,7 +633,7 @@ section, header.hero, footer.finale {
   font-size: 1.25rem;
 }
 .detail-card p { line-height: 2; color: var(--ink-soft); }
-.detail-card p b { color: var(--ink); }
+.detail-card p b { color: var(--ink); font-family: var(--font-numbers); font-weight: 700; font-size: 1.1em; }
 
 /* ــــ الأزرار ــــ */
 .actions {
@@ -745,7 +748,8 @@ section, header.hero, footer.finale {
 
 .finale-date {
   margin-top: 12px;
-  font-family: var(--font-ar-display);
+  font-family: var(--font-numbers);
+  font-weight: 700;
   font-size: clamp(1rem, 3.4vw, 1.2rem);
   letter-spacing: .28em;
   color: var(--gold-deep);
