@@ -61,7 +61,6 @@ function openInvitation() {
     setTimeout(() => {
       scene.classList.add("gone");
       document.body.style.overflow = "";
-      $("floating-cta").hidden = false;
       setTimeout(() => scene.remove(), 1200);
     }, 900);
   }, 1600);
