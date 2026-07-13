@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>حسام &amp; ندى | دعوة زفاف</title>
+
+  <!-- ===== مشاركة الواتساب / السوشيال ===== -->
+  <meta property="og:title" content="دعوة زفاف حسام و ندى 💍" />
+  <meta property="og:description" content="بداية حكاية جميلة… تشرفنا دعوتكم لحضور حفل زفافنا يوم الأربعاء ٢٩ يوليو ٢٠٢٦" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/couple.jpg" />
+  <meta name="theme-color" content="#faf6ee" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💌</text></svg>" />
+
+  <!-- ===== الخطوط ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Aref+Ruqaa:wght@400;700&family=El+Messiri:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@500;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       المشهد الأول: الظرف المختوم
+  ════════════════════════════════════════ -->
+  <div id="envelope-scene" aria-label="دعوة مغلقة">
+    <div class="env-vignette"></div>
+
+    <p class="env-title">
+      <span class="env-title-ar">وصلتك رسالة خاصة</span>
+      <span class="env-title-en">You've received an invitation</span>
+    </p>
+
+    <div class="envelope-wrap">
+      <div class="envelope" id="envelope">
+        <div class="env-back"></div>
+
+        <!-- الجواب اللي جوا الظرف -->
+        <div class="letter" id="letter">
+          <div class="letter-inner">
+            <div class="letter-ornament">❦</div>
+            <p class="letter-bismillah">بسم الله الرحمن الرحيم</p>
+            <p class="letter-to" id="letter-to" hidden>دعوة خاصة إلى<b id="letter-guest"></b></p>
+            <h2 class="letter-names">حسام <span>&amp;</span> ندى</h2>
+            <p class="letter-line">يتشرفان بدعوتكم لحضور حفل زفافهما</p>
+            <p class="letter-date">الأربعاء ٢٩ يوليو ٢٠٢٦</p>
+            <div class="letter-ornament flip">❦</div>
+          </div>
+        </div>
+
+        <div class="env-pocket"></div>
+        <div class="env-flap" id="flap"></div>
+
+        <!-- ختم الشمع -->
+        <button class="wax-seal" id="seal" aria-label="افتح الدعوة">
+          <span class="wax-emboss">ح<i>&amp;</i>ن</span>
+        </button>
+      </div>
+
+      <p class="env-hint" id="env-hint">
+        <span class="hint-ring"></span>
+        اضغط على الختم لفتح الدعوة
+      </p>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════
+       الموقع الرئيسي
+  ════════════════════════════════════════ -->
+  <main id="site" hidden>
+
+    <!-- جزيئات ذهبية -->
+    <canvas id="petals" aria-hidden="true"></canvas>
+
+    <!-- ــــــ الهيرو ــــــ -->
+    <header class="hero reveal">
+      <div class="hero-frame">
+        <div class="corner c-tl"></div><div class="corner c-tr"></div>
+        <div class="corner c-bl"></div><div class="corner c-br"></div>
+
+        <p class="hero-kicker">بدايـــة حكايـــة جميلـــة</p>
+        <div class="divider"><span>✦</span></div>
+
+        <p class="hero-welcome">Welcome To</p>
+        <h1 class="hero-names">HOSSAM <span class="amp">&amp;</span> NADA</h1>
+        <p class="hero-sub">Wedding Celebration</p>
+
+        <p class="hero-guest" id="hero-guest" hidden></p>
+
+        <div class="divider"><span>✦</span></div>
+        <p class="hero-date">الأربعاء <b>٢٩ يوليو ٢٠٢٦</b> — الساعة <b>٨</b> مساءً</p>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span></span></div>
+    </header>
+
+    <!-- ــــــ الآية ــــــ -->
+    <section class="verse reveal">
+      <p class="verse-text">﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ﴾</p>
+      <p class="verse-ref">صدق الله العظيم</p>
+    </section>
+
+    <!-- ــــــ الصورة ــــــ -->
+    <section class="photo-section reveal">
+      <h2 class="section-title">من الطفولة… للعمر كله</h2>
+      <p class="section-sub">Once upon a time…</p>
+
+      <figure class="photo-frame" id="photo-frame">
+        <div class="photo-mat">
+          <img src="assets/couple.jpg" alt="حسام وندى وهما أطفال"
+               onerror="this.closest('.photo-frame').classList.add('no-photo')" />
+          <div class="photo-placeholder" aria-hidden="true">
+            <span class="ph-mono">ح ♥ ن</span>
+            <span class="ph-note">ضع صورة العروسين هنا<br><code>assets/couple.jpg</code></span>
+          </div>
+        </div>
+        <figcaption>كانت البداية من زمان… واتكتب لنا نكمّلها سوا ❤</figcaption>
+      </figure>
+    </section>
+
+    <!-- ــــــ العد التنازلي ــــــ -->
+    <section class="countdown-section reveal">
+      <h2 class="section-title">فاضل على الفرحة</h2>
+      <div class="countdown" id="countdown" role="timer">
+        <div class="cd-cell"><b id="cd-days">٠</b><span>يوم</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-cell"><b id="cd-hours">٠</b><span>ساعة</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-cell"><b id="cd-mins">٠</b><span>دقيقة</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-cell"><b id="cd-secs">٠</b><span>ثانية</span></div>
+      </div>
+      <p class="countdown-done" id="countdown-done" hidden>🎉 ألف مبروك! يومنا وصل 🎉</p>
+    </section>
+
+    <!-- ــــــ التفاصيل ــــــ -->
+    <section class="details reveal">
+      <h2 class="section-title">تفاصيل الحفل</h2>
+      <div class="details-grid">
+        <article class="detail-card">
+          <div class="detail-icon">🗓</div>
+          <h3>الموعد</h3>
+          <p>يوم الأربعاء<br><b>٢٩ / ٧ / ٢٠٢٦</b><br>الساعة ٨:٠٠ مساءً</p>
+        </article>
+        <article class="detail-card">
+          <div class="detail-icon">📍</div>
+          <h3>المكان</h3>
+          <p>قاعة أفراح <b>وادي العمر</b><br>صفط تراب — المحلة الكبرى<br>محافظة الغربية</p>
+        </article>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn-gold" id="btn-map" href="#" target="_blank" rel="noopener">
+          <span>📍</span> الوصول للقاعة
+        </a>
+        <a class="btn btn-outline" id="btn-calendar" href="#" target="_blank" rel="noopener">
+          <span>🗓</span> ذكّرني بالمعاد
+        </a>
+        <button class="btn btn-outline" id="btn-share">
+          <span>💌</span> شارك الدعوة
+        </button>
+      </div>
+      <p class="share-toast" id="share-toast" hidden>تم نسخ رابط الدعوة ✅</p>
+    </section>
+
+    <!-- ــــــ الختام ــــــ -->
+    <section class="closing reveal">
+      <div class="divider big"><span>❦</span></div>
+      <p class="closing-text">حضوركم يزيد فرحتنا…<br>وننتظركم على أحرّ من الجمر</p>
+      <p class="closing-sign">مع كل الحب،<br><b>عائلتا العروسين</b></p>
+    </section>
+
+    <!-- ــــــ الفوتر / البورتفوليو ــــــ -->
+    <footer class="credit">
+      <p class="credit-q">عجبتك الدعوة؟ 😍</p>
+      <a class="btn btn-gold btn-credit" href="https://portfolioweddify.vercel.app/" target="_blank" rel="noopener">
+        اطلب دعوتك الخاصة الآن ✨
+      </a>
+      <p class="credit-by">
+        Crafted with ♥ by
+        <a href="https://portfolioweddify.vercel.app/" target="_blank" rel="noopener">Weddify</a>
+      </p>
+    </footer>
+  </main>
+
+  <!-- زر عائم للبورتفوليو -->
+  <a class="floating-cta" id="floating-cta" href="https://portfolioweddify.vercel.app/" target="_blank" rel="noopener" hidden>
+    ✨ عايز دعوة زي دي؟
+  </a>
+
+  <!-- موسيقى اختيارية: حط ملف assets/music.mp3 وهيشتغل تلقائيًا -->
+  <audio id="bg-music" src="assets/music.mp3" loop preload="none"></audio>
+  <button class="music-toggle" id="music-toggle" hidden aria-label="تشغيل/إيقاف الموسيقى">♪</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
