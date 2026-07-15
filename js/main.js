@@ -11,7 +11,7 @@ const CONFIG = {
   // توقيت القاهرة (UTC+3 صيفًا)
   weddingDate: new Date("2026-07-29T20:00:00+03:00"),
   eventDurationHours: 4,
-  venueName: "قاعة أفراح وادي العمر — صفط تراب، المحلة الكبرى",
+  venueName: "قاعة أفراح القمر — وادي العمر، صفط تراب، المحلة الكبرى",
   mapsUrl:
     "https://maps.google.com?q=Wady%20Elamar,%20Saft%20Torab,%20El%20Mahalla%20El%20Kubra&ftid=0x14f7ba239a32d8f7:0x1dbfcc6831d017ab&entry=gps&shh=CAE&lucs=,94297699,94231188,94280568,47071704,94218641,94282134,100813464,94286869,100804976&g_st=ic",
   shareText: "💌 وصلتك دعوة زفاف حسام و ندى — افتحها من هنا:",
