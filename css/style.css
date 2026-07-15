@@ -25,6 +25,9 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* أي عنصر hidden يفضل مخفي مهما كان الـ display بتاعه */
+[hidden] { display: none !important; }
+
 html { scroll-behavior: smooth; }
 
 body {
